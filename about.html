@@ -5,7 +5,7 @@ layout: base
 
     <section>
         <div class="container">
-            <h1>{{ site.inc.title }}</h1>
+            <h1>About {{ site.inc.title }}</h1>
             {% if site.inc.subtitle %}<h3>{{ site.inc.subtitle }}</h3>{% endif %}
 
             {% if site.inc.twitter %}
@@ -19,4 +19,19 @@ layout: base
             </a>
         </div>
     </section>
+
 </div>
+
+<article class="container">
+    <section class="index">
+        <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
+        <div>
+            <h2 class="title"><a href="{{ post.url }}" rel="prefetch">About XYZ</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus gravida ipsum, sed ornare sem vestibulum sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam ac consequat mauris. Morbi semper blandit interdum. Curabitur accumsan tincidunt venenatis. Mauris vehicula enim nec metus convallis, eu aliquet sapien maximus. Aenean tincidunt purus eget lectus fringilla, in rutrum risus sagittis. Integer gravida at orci eu lobortis. Cras massa ex, euismod vel nisi sit amet, porta elementum erat. Donec elementum nibh sed fringilla lacinia. Donec imperdiet non libero id lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas dignissim ac ex nec convallis. Nam fermentum lorem id mi consequat, vitae blandit turpis ullamcorper. Duis pharetra sem sed nunc mollis, at tristique velit lacinia.</p>
+            <div class="meta">
+                Meta
+            </div>
+        </div>
+        <hr>
+    </section>
+</article>
